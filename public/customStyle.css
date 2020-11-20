@@ -1,0 +1,149 @@
+/*
+    CS 328 Homework 10
+    Jack Lambert
+    Last modified: May 3rd, 2018
+    CSS style sheet for custom-session2.php
+*/
+
+body
+{
+    margin: auto;
+    margin-top: 2em;
+    width: 50%;
+    background: url(images/mist_mountain_trans-scaled.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-color: #DCDCDC;
+}
+
+h1
+{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: large;
+}
+
+h3
+{
+    font-weight: normal;
+    font-size: medium;
+}
+
+a
+{
+    margin: 1em
+}
+
+caption
+{
+    font-weight: normal;
+    font-size: large;
+    margin-bottom: 0.5em;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+table, th, td
+{
+    border: 1px solid black;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+form
+{
+    width: 80%;
+}
+
+fieldset
+{
+    margin: 1em;
+    padding: 1em;
+    border: thin solid black;
+    background-color: #ffffcc;
+}
+
+fieldset legend
+{
+    font-size: large;
+    font-weight: bold;
+    border: thin solid black;
+    background-color: white;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+li.white_background
+{
+    margin: 20px;
+    padding 20px;
+    border: solid;
+    background: white;
+}
+
+input
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+input[type="submit"]
+{
+    font-weight: bold;
+    font-size: large;
+    margin: 0.5em;
+    margin-bottom: 0.75em;
+}
+
+select
+{
+	padding: 0.3em;
+}
+
+option
+{
+    padding: 0.2em;
+    margin-bottom: 0.4em;
+}
+
+label
+{
+    margin: 0.2em;
+}
+
+.fieldset_instructions
+{
+    font-size: medium;
+	font-style: italic;
+	font-weight: bold;
+}
+
+img
+{
+    float: left;
+    padding: 7px;
+}
+
+#map {
+  height: 100%;
+}
+
+.text-right
+{
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+}

@@ -1,0 +1,47 @@
+/*
+    Jack Lambert
+    Last modified: November 13th, 2020
+    CSS style sheet for custom-session2.php
+*/
+
+body
+{
+    margin: auto;
+    margin-top: 2em;
+    width: 75%;
+    padding-bottom: 100px;
+    background: url(/images/mist_mountain_trans-scaled.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-color: #DCDCDC;
+}
+
+a
+{
+    margin: 1em
+}
+
+caption
+{
+    font-weight: normal;
+    font-size: large;
+    margin-bottom: 0.5em;
+}
+
+img.trailImages
+{
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    padding: 15px;
+}
+
+#map {
+    height: 100%;
+}
+
+.text-right
+{
+    text-align: right;
+}

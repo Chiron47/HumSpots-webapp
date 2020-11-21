@@ -3,6 +3,10 @@ const app = express();
 var AWS = require('aws-sdk');
 var request = require('request');
 const { info } = require("console");
+let ddb = new AWS.DynamoDB({
+    accessKeyId: process.env.aws_secret_key_id,
+    secretAccessKey: process.env.aws_secret_access_key
+});
 
 // Sets the public folder as the external file folder
 app.use(express.static("public"));

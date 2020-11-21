@@ -19,7 +19,10 @@ app.get("/", function(req, res){
     AWS.config.update({region: 'us-west-2'});
 
     // Create DynamoDB service object
-    var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
+    var ddb = new AWS.DynamoDB({
+        apiVersion: '2012-08-10',
+        accessKeyId: process.env.aws_secret_key_id,
+        secretAccessKey: process.env.aws_secret_access_key});
 
     // Set up parameters for scan of Events table
     var params = 

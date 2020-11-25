@@ -187,11 +187,6 @@ app.get("/Google_Maps", function(req, res){
     res.render("Google_Maps.ejs");
 });
 
-// Build the Login page
-app.get("/Login", function(req, res){
-    res.render("Login.ejs");
-});
-
 // Catch any other routes that people might enter and send error code
 app.get("*", function(req, res){
     res.send("404 Error, that route does not exist.");

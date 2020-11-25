@@ -17,7 +17,7 @@
             <div class="text-right">
               <h3><a href="/Trail/<%= indexNum[i] %>"><%= Name[i].substring(1, Name[i].length-1) %></a> </h3>
               <h4><%= Address[i].substring(1, Address[i].length-1) %></h4>
-              <p> User Rating: <%= Rating[i] %> out of 5 stars with <%= NumRating[i] %> user reviews.  Trail # <%= indexNum[i]%></p>
+              <p> User Rating: <%= Rating[i] %> out of 5 stars with <%= NumRating[i] %> user reviews.</p>
             </div>
             <img class="trailImages" src="https://maps.googleapis.com/maps/api/place/photo?photoreference=<%= PhotoReference[i].substring(1, PhotoReference[i].length-1) %>&sensor=false&maxheight=175&maxwidth=175&key=AIzaSyBdVeYOrRCsfScewl6LG8ZPaa5mg-_33OQ" height="175" width="175" alt="Trail photo">
           </div>

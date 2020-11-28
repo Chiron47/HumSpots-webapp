@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const request = require('request');
 
 //Routes
-router.get("/Trails", (req, res) => {
+router.get("/", (req, res) => {
 
     // Use request to pull a large string of JSON containing the Trails data
     request("https://maps.googleapis.com/maps/api/place/textsearch/json?query=Trails+in+Humboldt&key=AIzaSyB2SbC24Cm4_D1Dl8qooOLLckDtBa362bM", function(error, response, body) {

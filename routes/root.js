@@ -1,5 +1,11 @@
 const express = require('express');
-const router = express.router();
+const router = express.Router();
+const AWS = require('aws-sdk');
+let ddb = new AWS.DynamoDB({
+    accessKeyId: process.env.aws_secret_key_id,
+    secretAccessKey: process.env.aws_secret_access_key
+});
+
 
 router.get("/", (req, res) => {
     // Set the region 

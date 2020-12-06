@@ -14,8 +14,8 @@
         <div class="card mb-4 shadow-sm" name="list" style="border-style: solid; padding: 25px; margin:60px; max-width: 1500px;">
             <div class="text-right">
               <h3><%= Name[trailNum].substring(1, Name[trailNum].length-1) %> </h3>
-              <h4><%= Address[trailNum].substring(1, Address[trailNum].length-1) %></h4>
-              <p> User Rating: <%= Rating[trailNum] %> out of 5 stars with <%= NumRating[trailNum] %> user reviews.</p>
+              <p><%= Address[trailNum].substring(1, Address[trailNum].length-1) %></p>
+              <p> User Rating: <%= Rating[trailNum] %> out of 5 stars with <%= NumRating[trailNum] %> user reviews.  Trail photo by </p>
             </div>
             <img class="trailImages" src="https://maps.googleapis.com/maps/api/place/photo?photoreference=<%= PhotoReference[trailNum].substring(1, PhotoReference[trailNum].length-1) %>&sensor=false&maxheight=175&maxwidth=175&key=AIzaSyBdVeYOrRCsfScewl6LG8ZPaa5mg-_33OQ" height="175" width="175" alt="Trail photo">
         </div>

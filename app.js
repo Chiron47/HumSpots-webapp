@@ -18,16 +18,17 @@ app.use('/Trail', trailRoute);
 app.use('/Trails', trailsRoute);
 
 // Build the Google Maps page
-app.get("/Google_Maps", function(req, res){
+app.get("/Google_Maps", (req, res) => {
     res.render("Google_Maps.ejs");
 });
 
 // Catch any other routes that people might enter and send error code
-app.get("*", function(req, res){
+app.get("*", (req, res) => {
     res.send("404 Error, that route does not exist.");
 });
 
 // Start the server
-app.listen(process.env.PORT || 3000, function(){
-    console.log("If you see this, Node.js is running on 3000 and on Heroku.");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`If you see this, Node.js is running on ${port}.`);
 })

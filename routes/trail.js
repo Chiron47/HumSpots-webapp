@@ -4,7 +4,7 @@ const request = require('request');
 
 router.get("/:trailNum", (req, res) => {
     // Use request to pull a large string of JSON containing the Trails data
-    request("https://maps.googleapis.com/maps/api/place/textsearch/json?query=Trails+in+Humboldt&key=AIzaSyB2SbC24Cm4_D1Dl8qooOLLckDtBa362bM", (error, response, body) => {
+    request("https://maps.googleapis.com/maps/api/place/textsearch/json?query=Trails+in+Humboldt&key=AIzaSyCYb2gcE4rqmhoQ_9bcL2GSTsoihFn3xUU", (error, response, body) => {
         if (error) {
             console.log(error);
         } else {
